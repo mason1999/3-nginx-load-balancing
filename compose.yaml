@@ -10,8 +10,9 @@ services:
     ports:
       - 80:80
 
-  echo_app:
+  echo_app1:
     image: weshigbee/nginx-echo
-    container_name: echo_container
+    container_name: echo_container_1
     ports:
       - 5000:8080
+    hostname: echo1
