@@ -16,3 +16,13 @@ services:
     ports:
       - 5000:8080
     hostname: echo1
+
+  echo_app2:
+    image: weshigbee/nginx-echo
+    container_name: echo_container_2
+    hostname: echo2
+
+  echo_app3:
+    image: weshigbee/nginx-echo
+    container_name: echo_container_3
+    hostname: echo3
